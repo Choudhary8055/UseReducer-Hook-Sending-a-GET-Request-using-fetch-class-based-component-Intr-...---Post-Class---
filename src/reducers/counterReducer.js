@@ -1,9 +1,10 @@
 import React, { useReducer, useState } from "react";
 
 const counterReducer = (state, action) => {
-  const initialValues = {
-    count: 0
-  };
+  // const initialValues = {
+  //   count: 0
+  // };
+  const count = 0;
   switch (action.type) {
     case "INCREMENTBYONE":
       return {

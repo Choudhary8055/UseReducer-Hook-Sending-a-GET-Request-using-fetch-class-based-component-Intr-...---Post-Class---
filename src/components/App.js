@@ -3,9 +3,11 @@ import { counterReducer } from "../reducers/counterReducer";
 import "../styles/App.css";
 const App = () => {
   const [state, dispatch] = useReducer(counterReducer, App);
+  // const count = 0;
   return (
     <div id="main">
-      <span id="counter">{state.count}</span>
+      <span id="counter">count-{state.count}</span>
+      <br></br>
       <button
         id="increment-btn"
         onClick={() => dispatch({ type: "INCREMENTBYONE" })}
