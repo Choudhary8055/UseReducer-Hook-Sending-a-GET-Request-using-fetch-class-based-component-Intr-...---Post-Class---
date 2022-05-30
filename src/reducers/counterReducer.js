@@ -4,7 +4,10 @@ const counterReducer = (state, action) => {
   // const initialValues = {
   //   count: 0
   // };
-  const count = 0;
+  // const count = 0;
+  state = {
+    count: 0
+  };
   switch (action.type) {
     case "INCREMENTBYONE":
       return {

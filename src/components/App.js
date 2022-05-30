@@ -4,6 +4,9 @@ import "../styles/App.css";
 const App = () => {
   const [state, dispatch] = useReducer(counterReducer, App);
   // const count = 0;
+  // state = {
+  //   count: 0
+  // };
   return (
     <div id="main">
       <span id="counter">count-{state.count}</span>
