@@ -16,6 +16,8 @@ const App = () => {
         Increment
       </button>
       <br></br>
+      <span id="counter">{state.count}</span>
+      <br></br>
       <button
         id="decrement-btn"
         onClick={() => dispatch({ type: "DECREMENTBYONE" })}
